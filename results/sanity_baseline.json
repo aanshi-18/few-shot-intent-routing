@@ -1,0 +1,30 @@
+{
+  "stage": "sanity_closed_set_77",
+  "sklearn": "1.8.0",
+  "config": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "sublinear_tf": true,
+      "lowercase": true,
+      "min_df": 1
+    },
+    "logreg": {
+      "C": 10.0,
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "random_state": 0
+  },
+  "dataset_fingerprint": {
+    "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+  },
+  "vocab_size": 23608,
+  "accuracy": 0.8938311688311689,
+  "macro_f1": 0.8941886071786471,
+  "fit_seconds": 15.56
+}

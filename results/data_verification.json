@@ -1,0 +1,70 @@
+{
+  "fingerprint_sha256": {
+    "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+  },
+  "columns": [
+    "text",
+    "category"
+  ],
+  "n_train": 10003,
+  "n_test": 3080,
+  "n_labels_json": 77,
+  "n_labels_train": 77,
+  "n_labels_test": 77,
+  "labels_match_json": true,
+  "null_text_or_label": 0,
+  "train_per_class_min_med_max": [
+    35,
+    127,
+    187
+  ],
+  "test_per_class_min_med_max": [
+    40,
+    40,
+    40
+  ],
+  "test_per_class_unique_counts": [
+    40
+  ],
+  "dup_exact_within_train": 0,
+  "dup_norm_within_train": 4,
+  "dup_exact_within_test": 0,
+  "dup_norm_within_test": 1,
+  "conflicting_label_texts_train": 0,
+  "conflicting_label_texts_test": 0,
+  "train_test_overlap_texts_norm": 7,
+  "conflicting_label_texts_across_train_test": 0,
+  "conflict_examples": [],
+  "within_train_dup_examples": [
+    {
+      "text": "Do I need to go to a physical bank to change my PIN?",
+      "category": "change_pin"
+    },
+    {
+      "text": "\nDo I need to go to a physical bank to change my PIN?",
+      "category": "change_pin"
+    },
+    {
+      "text": "I can't seem to be able to use my card",
+      "category": "card_not_working"
+    },
+    {
+      "text": "\nI can't seem to be able to use my card\n\n\n",
+      "category": "card_not_working"
+    },
+    {
+      "text": "\nI put the wrong pin too many times and now it is blocked. Can you help me unblock it?",
+      "category": "pin_blocked"
+    },
+    {
+      "text": "I put the wrong pin too many times and now it is blocked. Can you help me unblock it?",
+      "category": "pin_blocked"
+    }
+  ],
+  "text_len_words_train_mean_max": [
+    11.95,
+    79
+  ]
+}

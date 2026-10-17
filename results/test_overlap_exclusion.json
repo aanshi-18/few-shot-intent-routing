@@ -1,0 +1,55 @@
+{
+ "policy": "exclude_train_rows_whose_lowercase_whitespace_collapsed_key_is_in_official_test",
+ "dataset_fingerprint": {
+  "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+  "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+  "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+ },
+ "n_rows_excluded": 7,
+ "n_distinct_keys": 7,
+ "by_category": {
+  "atm_support": 1,
+  "card_acceptance": 2,
+  "change_pin": 1,
+  "compromised_card": 1,
+  "country_support": 1,
+  "pin_blocked": 1
+ },
+ "rows": [
+  {
+   "row": 1722,
+   "category": "pin_blocked",
+   "text": "How do I unblock my PIN?"
+  },
+  {
+   "row": 3103,
+   "category": "card_acceptance",
+   "text": "What businesses accept this card?"
+  },
+  {
+   "row": 3116,
+   "category": "card_acceptance",
+   "text": "Where can I use my card?"
+  },
+  {
+   "row": 4476,
+   "category": "compromised_card",
+   "text": "There are a few transaction that I don't recognize, I think someone managed to get my card details and use it."
+  },
+  {
+   "row": 4576,
+   "category": "atm_support",
+   "text": "At which ATMs can I use this card?"
+  },
+  {
+   "row": 6984,
+   "category": "change_pin",
+   "text": "Which cash machines will allow me to change my PIN?"
+  },
+  {
+   "row": 9921,
+   "category": "country_support",
+   "text": "I don't live in the UK. Can I still get a card?"
+  }
+ ]
+}

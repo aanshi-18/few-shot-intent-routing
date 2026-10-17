@@ -1,0 +1,82 @@
+seed 0: OK | train_sup=4407 dev_sup=1103 dev_new=443 dev_unk=835 | excluded train rows=7 by role={'supported': 6, 'new': 0, 'dev_unknown': 1, 'test_unknown': 0} | min adapt pool=76 | test: orig=1800 new=600 test_unknown=400
+seed 1: OK | train_sup=4654 dev_sup=1164 dev_new=390 dev_unk=807 | excluded train rows=7 by role={'supported': 0, 'new': 3, 'dev_unknown': 3, 'test_unknown': 1} | min adapt pool=68 | test: orig=1800 new=600 test_unknown=400
+seed 2: OK | train_sup=4891 dev_sup=1224 dev_new=349 dev_unk=839 | excluded train rows=7 by role={'supported': 5, 'new': 0, 'dev_unknown': 1, 'test_unknown': 1} | min adapt pool=28 | test: orig=1800 new=600 test_unknown=400
+all split checks passed (executed)
+seed 0: OK | train_sup=4407 dev_sup=1103 dev_new=443 dev_unk=835 | excluded train rows=7 by role={'supported': 6, 'new': 0, 'dev_unknown': 1, 'test_unknown': 0} | min adapt pool=76 | test: orig=1800 new=600 test_unknown=400
+seed 1: OK | train_sup=4654 dev_sup=1164 dev_new=390 dev_unk=807 | excluded train rows=7 by role={'supported': 0, 'new': 3, 'dev_unknown': 3, 'test_unknown': 1} | min adapt pool=68 | test: orig=1800 new=600 test_unknown=400
+seed 2: OK | train_sup=4891 dev_sup=1224 dev_new=349 dev_unk=839 | excluded train rows=7 by role={'supported': 5, 'new': 0, 'dev_unknown': 1, 'test_unknown': 1} | min adapt pool=28 | test: orig=1800 new=600 test_unknown=400
+all split checks passed (executed)
+small_run saved metrics, row provenance and thresholds verified
+small_run_proto saved metrics, row provenance and thresholds verified
+1/60 tfidf_lr split=0 pre adapt=None shots=None: imported verified pilot
+2/60 tfidf_lr split=0 post adapt=0 shots=1: executed
+3/60 tfidf_lr split=0 post adapt=0 shots=5: imported verified pilot
+4/60 tfidf_lr split=0 post adapt=0 shots=10: executed
+5/60 tfidf_lr split=0 post adapt=1 shots=1: executed
+6/60 tfidf_lr split=0 post adapt=1 shots=5: executed
+7/60 tfidf_lr split=0 post adapt=1 shots=10: executed
+8/60 tfidf_lr split=0 post adapt=2 shots=1: executed
+9/60 tfidf_lr split=0 post adapt=2 shots=5: executed
+10/60 tfidf_lr split=0 post adapt=2 shots=10: executed
+11/60 tfidf_lr split=1 pre adapt=None shots=None: executed
+12/60 tfidf_lr split=1 post adapt=0 shots=1: executed
+13/60 tfidf_lr split=1 post adapt=0 shots=5: executed
+14/60 tfidf_lr split=1 post adapt=0 shots=10: executed
+15/60 tfidf_lr split=1 post adapt=1 shots=1: executed
+16/60 tfidf_lr split=1 post adapt=1 shots=5: executed
+17/60 tfidf_lr split=1 post adapt=1 shots=10: executed
+18/60 tfidf_lr split=1 post adapt=2 shots=1: executed
+19/60 tfidf_lr split=1 post adapt=2 shots=5: executed
+20/60 tfidf_lr split=1 post adapt=2 shots=10: executed
+21/60 tfidf_lr split=2 pre adapt=None shots=None: executed
+22/60 tfidf_lr split=2 post adapt=0 shots=1: executed
+23/60 tfidf_lr split=2 post adapt=0 shots=5: executed
+24/60 tfidf_lr split=2 post adapt=0 shots=10: executed
+25/60 tfidf_lr split=2 post adapt=1 shots=1: executed
+26/60 tfidf_lr split=2 post adapt=1 shots=5: executed
+27/60 tfidf_lr split=2 post adapt=1 shots=10: executed
+28/60 tfidf_lr split=2 post adapt=2 shots=1: executed
+29/60 tfidf_lr split=2 post adapt=2 shots=5: executed
+30/60 tfidf_lr split=2 post adapt=2 shots=10: executed
+31/60 minilm_proto split=0 pre adapt=None shots=None: imported verified pilot
+32/60 minilm_proto split=0 post adapt=0 shots=1: executed
+33/60 minilm_proto split=0 post adapt=0 shots=5: imported verified pilot
+34/60 minilm_proto split=0 post adapt=0 shots=10: executed
+35/60 minilm_proto split=0 post adapt=1 shots=1: executed
+36/60 minilm_proto split=0 post adapt=1 shots=5: executed
+37/60 minilm_proto split=0 post adapt=1 shots=10: executed
+38/60 minilm_proto split=0 post adapt=2 shots=1: executed
+39/60 minilm_proto split=0 post adapt=2 shots=5: executed
+40/60 minilm_proto split=0 post adapt=2 shots=10: executed
+41/60 minilm_proto split=1 pre adapt=None shots=None: executed
+42/60 minilm_proto split=1 post adapt=0 shots=1: executed
+43/60 minilm_proto split=1 post adapt=0 shots=5: executed
+44/60 minilm_proto split=1 post adapt=0 shots=10: executed
+45/60 minilm_proto split=1 post adapt=1 shots=1: executed
+46/60 minilm_proto split=1 post adapt=1 shots=5: executed
+47/60 minilm_proto split=1 post adapt=1 shots=10: executed
+48/60 minilm_proto split=1 post adapt=2 shots=1: executed
+49/60 minilm_proto split=1 post adapt=2 shots=5: executed
+50/60 minilm_proto split=1 post adapt=2 shots=10: executed
+51/60 minilm_proto split=2 pre adapt=None shots=None: executed
+52/60 minilm_proto split=2 post adapt=0 shots=1: executed
+53/60 minilm_proto split=2 post adapt=0 shots=5: executed
+54/60 minilm_proto split=2 post adapt=0 shots=10: executed
+55/60 minilm_proto split=2 post adapt=1 shots=1: executed
+56/60 minilm_proto split=2 post adapt=1 shots=5: executed
+57/60 minilm_proto split=2 post adapt=1 shots=10: executed
+58/60 minilm_proto split=2 post adapt=2 shots=1: executed
+59/60 minilm_proto split=2 post adapt=2 shots=5: executed
+60/60 minilm_proto split=2 post adapt=2 shots=10: executed
+seed 0: OK | train_sup=4407 dev_sup=1103 dev_new=443 dev_unk=835 | excluded train rows=7 by role={'supported': 6, 'new': 0, 'dev_unknown': 1, 'test_unknown': 0} | min adapt pool=76 | test: orig=1800 new=600 test_unknown=400
+seed 1: OK | train_sup=4654 dev_sup=1164 dev_new=390 dev_unk=807 | excluded train rows=7 by role={'supported': 0, 'new': 3, 'dev_unknown': 3, 'test_unknown': 1} | min adapt pool=68 | test: orig=1800 new=600 test_unknown=400
+seed 2: OK | train_sup=4891 dev_sup=1224 dev_new=349 dev_unk=839 | excluded train rows=7 by role={'supported': 5, 'new': 0, 'dev_unknown': 1, 'test_unknown': 1} | min adapt pool=28 | test: orig=1800 new=600 test_unknown=400
+all split checks passed (executed)
+Verified 60 phases: six independent pre baselines + 54 post configurations.
+      method  shots  post__new_message_subset_accuracy__mean  post__all_supported_closed_set_macro_f1__mean  post__test_unknown_false_acceptance__mean
+minilm_proto      1                                 0.419444                                       0.748544                                   0.739167
+minilm_proto      5                                 0.757037                                       0.846523                                   0.692500
+minilm_proto     10                                 0.799074                                       0.856410                                   0.678611
+    tfidf_lr      1                                 0.003519                                       0.603104                                   0.699722
+    tfidf_lr      5                                 0.119259                                       0.656254                                   0.693056
+    tfidf_lr     10                                 0.307778                                       0.731285                                   0.665000

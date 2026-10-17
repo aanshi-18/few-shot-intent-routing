@@ -1,0 +1,16 @@
+{
+  "stage6": "completed",
+  "pdf_pages": 5,
+  "error_cases": 42,
+  "analysis_only": true,
+  "inputs": {
+    "summary_sha256": "a24359bb8d006d99d14c9ed568be0f1c629ceabde665068f63c4260c7a0fe9d0"
+  },
+  "outputs": {
+    "report/Banking77_Research_Report.pdf": "b02f0d02f872d8dfe626a4056bd4d061dd1d01a2e1c5ee2ac3c27d5023513d55",
+    "report/REPORT.md": "6a45182276e24808f9420817933f910976f91c554d6b95170e32a2e1a7cb4311",
+    "report/error_audit.csv": "b8ed4d0a5f9b4e6d7f474ee4f09baed1bfc0895035d2a181d2828d0bfd53e607",
+    "report/adaptation.png": "c86ab769c14e2c2848ef514d4e21d6f3e6cf5b89753ddd35c273553ab42c85f9",
+    "report/routing.png": "ca7123f6cbdbdcc1d908b299ee2d80e408d6c3a43a5ce7b4518ad5a0f56ede81"
+  }
+}
