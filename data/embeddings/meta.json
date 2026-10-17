@@ -1,0 +1,31 @@
+{
+  "spec": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dataset_fingerprint": {
+      "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+    },
+    "normalization": "L2",
+    "preprocessing": "whitespace collapsed; case retained",
+    "clean_text_sha256": "ea95c15822a743c01ed42b7d53e9152c5fc7f20fd73d45724ecf71028e5c312b",
+    "max_seq_length": 256,
+    "precision": "float32"
+  },
+  "encoding_seconds": 31.45911354100008,
+  "truncated_text_counts": {
+    "train": 0,
+    "test": 0
+  },
+  "files": {
+    "train": "64e01d0a1d5650491c650e0e474563be50e7a90c420533166a63c863994b989c",
+    "test": "94e793d56efd705bd6cb92b1931be9976d5bf994c2f7ba6880a232efa4dd3891"
+  },
+  "versions": {
+    "sentence-transformers": "6.1.0",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.19.0",
+    "numpy": "2.3.5"
+  }
+}

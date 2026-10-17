@@ -1,0 +1,81 @@
+{
+  "dataset": {
+    "name": "BANKING77",
+    "source": "https://github.com/PolyAI-LDN/task-specific-datasets (banking_data/)",
+    "raw_dir": "data/raw",
+    "train_file": "train.csv",
+    "test_file": "test.csv",
+    "categories_file": "categories.json"
+  },
+  "sanity_baseline": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "sublinear_tf": true,
+      "lowercase": true,
+      "min_df": 1
+    },
+    "logreg": {
+      "C": 10.0,
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "random_state": 0
+  },
+  "splits": {
+    "n_supported": 45,
+    "n_new": 15,
+    "n_dev_unknown": 7,
+    "n_test_unknown": 10,
+    "dev_fraction": 0.2,
+    "split_seeds": [
+      0,
+      1,
+      2
+    ],
+    "adapt_seeds": [
+      0,
+      1,
+      2
+    ],
+    "shots": [
+      1,
+      5,
+      10
+    ],
+    "overlap_policy": "exclude_train_rows_whose_lowercase_whitespace_collapsed_key_is_in_official_test"
+  },
+  "few_shot_tfidf_lr": {
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "sublinear_tf": true,
+      "lowercase": true,
+      "min_df": 1
+    },
+    "logreg": {
+      "C": 10.0,
+      "max_iter": 1000,
+      "solver": "lbfgs"
+    },
+    "random_state": 0,
+    "note": "Same fixed settings as the sanity baseline; not tuned on any data."
+  },
+  "threshold": {
+    "rule": "accept iff score >= threshold",
+    "target_acceptance": 0.9,
+    "quantile": 0.1,
+    "quantile_method": "lower",
+    "comparison": ">=",
+    "note": "threshold = numpy.quantile(supported_dev_scores, 0.10, method='lower'), an observed score"
+  },
+  "small_run": {
+    "split_seed": 0,
+    "adapt_seed": 0,
+    "shots": 5
+  }
+}
