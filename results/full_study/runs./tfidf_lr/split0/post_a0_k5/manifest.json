@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "method": "tfidf_lr",
+    "split_seed": 0,
+    "phase": "post",
+    "adapt_seed": 0,
+    "shots": 5,
+    "split_sha256": "6644bc2431911d84a6f6c978a73afa9ace65485af8490403f65950c3ecbee6ad",
+    "dataset_fingerprint": {
+      "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+    },
+    "model_config": {
+      "tfidf": {
+        "ngram_range": [
+          1,
+          2
+        ],
+        "sublinear_tf": true,
+        "lowercase": true,
+        "min_df": 1
+      },
+      "logreg": {
+        "C": 10.0,
+        "max_iter": 1000,
+        "solver": "lbfgs"
+      },
+      "random_state": 0,
+      "note": "Same fixed settings as the sanity baseline; not tuned on any data."
+    },
+    "cache_meta_sha256": null,
+    "threshold_config": {
+      "rule": "accept iff score >= threshold",
+      "target_acceptance": 0.9,
+      "quantile": 0.1,
+      "quantile_method": "lower",
+      "comparison": ">=",
+      "note": "threshold = numpy.quantile(supported_dev_scores, 0.10, method='lower'), an observed score"
+    },
+    "fit_prediction_hash": "9ee8984673e5e2ca695cfc2ec5c1def035d4f7be3d598fff2b2186a521b690da",
+    "phase_runner_hash": "7c45448b86d9bdac4a7cfbe6e5faec238fa18a89dbed5fb3fdeb908c064540df",
+    "threshold_hash": "877f1d10476d847b407d26a277accc9eb133b0d455c18c6ccbea47e7d0570321"
+  },
+  "info": {
+    "origin": "reused_verified_pilot",
+    "pilot_report_sha256": "0a7bb28bbd24dffd84ea4c0dbcfc515dcba638b7c47c890611d771b620cc3902",
+    "pilot_prediction_sha256": "b734b35ff794a5ea9be0c5250992028adf91421fd1948cff2cbd054e9d2eb4b7",
+    "pilot_source": "results/small_run",
+    "environment_note": "Pilot environment recorded in Stage 3/4 state; LR pilot sklearn 1.9.1, new runs record actual environment.",
+    "fit_seconds": 9.943,
+    "fit_runtime_scope": "Historical pilot runtime; not directly comparable across environments or cached/original prototype construction",
+    "new_fit_examples": 75,
+    "additional_new_dev_examples": 443,
+    "threshold": 0.1531376623451602,
+    "calibration_count": 1546,
+    "dev_supported_acceptance": 0.9003880983182406,
+    "dev_unknown_false_acceptance": 0.8011976047904191,
+    "warnings": [],
+    "warning_note": "Historical pilot did not save solver warnings."
+  },
+  "predictions_sha256": "bcac48353a9f70985a63846b8445d8bc2f6ead0d68d2616103c64e10ba64916b",
+  "dev_scores_sha256": "762846b45d25f2bb1354586e3030c9c66e782f8a98f1581d1a23b4a6268d0fcc"
+}
