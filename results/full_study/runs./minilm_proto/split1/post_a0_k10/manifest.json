@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "method": "minilm_proto",
+    "split_seed": 1,
+    "phase": "post",
+    "adapt_seed": 0,
+    "shots": 10,
+    "split_sha256": "c1a93863988c6e1ac951539b8cc27c38ddf7025c59dfb379215e458debd39adc",
+    "dataset_fingerprint": {
+      "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+    },
+    "model_config": {
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "dataset_fingerprint": {
+        "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+        "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+        "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+      },
+      "normalization": "L2",
+      "preprocessing": "whitespace collapsed; case retained",
+      "clean_text_sha256": "ea95c15822a743c01ed42b7d53e9152c5fc7f20fd73d45724ecf71028e5c312b",
+      "max_seq_length": 256,
+      "precision": "float32"
+    },
+    "cache_meta_sha256": "fba1ba8124fea9e1c851a3964c9346b95acc10faf40705deec5aae6a0afe1e0e",
+    "threshold_config": {
+      "rule": "accept iff score >= threshold",
+      "target_acceptance": 0.9,
+      "quantile": 0.1,
+      "quantile_method": "lower",
+      "comparison": ">=",
+      "note": "threshold = numpy.quantile(supported_dev_scores, 0.10, method='lower'), an observed score"
+    },
+    "fit_prediction_hash": "91670fec5003729105f927bf5f3f5005832992582fa705f28122fd2ef55cd281",
+    "phase_runner_hash": "7c45448b86d9bdac4a7cfbe6e5faec238fa18a89dbed5fb3fdeb908c064540df",
+    "threshold_hash": "877f1d10476d847b407d26a277accc9eb133b0d455c18c6ccbea47e7d0570321"
+  },
+  "info": {
+    "origin": "executed_stage5",
+    "environment": {
+      "python": "3.12.14",
+      "versions": {
+        "numpy": "2.3.5",
+        "pandas": "2.2.3",
+        "scikit-learn": "1.8.0",
+        "scipy": "1.17.0"
+      }
+    },
+    "fit_seconds": 0.014651305000029424,
+    "fit_runtime_scope": "LR refits TF-IDF and classifier; prototypes form original and new prototypes using cached vectors",
+    "new_fit_examples": 150,
+    "additional_new_dev_examples": 390,
+    "threshold": 0.6266266703605652,
+    "calibration_count": 1554,
+    "dev_supported_acceptance": 0.9002574002574003,
+    "dev_unknown_false_acceptance": 0.6641883519206939,
+    "max_iterations_used": null,
+    "warnings": []
+  },
+  "predictions_sha256": "9c5b8fb5338072371e14f6f43d711ac47e2c2c5ee19e43175b14a06a7ca9e1eb",
+  "dev_scores_sha256": "e2b380b71b8f936ff0c9d506463f7b25babc04b20b552b94ecb622fc53284ba8"
+}

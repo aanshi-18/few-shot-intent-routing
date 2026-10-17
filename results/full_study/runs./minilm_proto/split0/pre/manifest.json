@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "method": "minilm_proto",
+    "split_seed": 0,
+    "phase": "pre",
+    "adapt_seed": null,
+    "shots": null,
+    "split_sha256": "6644bc2431911d84a6f6c978a73afa9ace65485af8490403f65950c3ecbee6ad",
+    "dataset_fingerprint": {
+      "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+    },
+    "model_config": {
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "dataset_fingerprint": {
+        "train_file": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+        "test_file": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+        "categories_file": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+      },
+      "normalization": "L2",
+      "preprocessing": "whitespace collapsed; case retained",
+      "clean_text_sha256": "ea95c15822a743c01ed42b7d53e9152c5fc7f20fd73d45724ecf71028e5c312b",
+      "max_seq_length": 256,
+      "precision": "float32"
+    },
+    "cache_meta_sha256": "fba1ba8124fea9e1c851a3964c9346b95acc10faf40705deec5aae6a0afe1e0e",
+    "threshold_config": {
+      "rule": "accept iff score >= threshold",
+      "target_acceptance": 0.9,
+      "quantile": 0.1,
+      "quantile_method": "lower",
+      "comparison": ">=",
+      "note": "threshold = numpy.quantile(supported_dev_scores, 0.10, method='lower'), an observed score"
+    },
+    "fit_prediction_hash": "91670fec5003729105f927bf5f3f5005832992582fa705f28122fd2ef55cd281",
+    "phase_runner_hash": "7c45448b86d9bdac4a7cfbe6e5faec238fa18a89dbed5fb3fdeb908c064540df",
+    "threshold_hash": "877f1d10476d847b407d26a277accc9eb133b0d455c18c6ccbea47e7d0570321"
+  },
+  "info": {
+    "origin": "reused_verified_pilot",
+    "pilot_report_sha256": "1ebae35ebd79b3212542cacb40376c2cdeb5b12d3c00bf8e3f28edc8f89f572e",
+    "pilot_prediction_sha256": "5304f15b13c735730ed52f19d540ea922d22f3fcb812a8dc1435fc606d04f7af",
+    "pilot_source": "results/small_run_proto",
+    "environment_note": "Pilot environment recorded in Stage 3/4 state; LR pilot sklearn 1.9.1, new runs record actual environment.",
+    "fit_seconds": 0.008040877999974327,
+    "fit_runtime_scope": "Historical pilot runtime; not directly comparable across environments or cached/original prototype construction",
+    "new_fit_examples": 0,
+    "additional_new_dev_examples": 0,
+    "threshold": 0.6152387261390686,
+    "calibration_count": 1103,
+    "dev_supported_acceptance": 0.900271985494107,
+    "dev_unknown_false_acceptance": 0.6323353293413174,
+    "warnings": [],
+    "warning_note": "Historical pilot did not save solver warnings."
+  },
+  "predictions_sha256": "cf61e07b7b3c8b13e5f8d5c3f03713d2596a7695f799b828235a8c619b4691e9",
+  "dev_scores_sha256": "ab97f5498d49e6f5c4420b77cc5aa4d73821da75e3d7d8e0aaf63d654f150091"
+}
