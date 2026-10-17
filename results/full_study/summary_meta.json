@@ -1,0 +1,9 @@
+{
+  "metric_code_hash": "748eb6754fd222b6937cd2570dc3ac867652254313150d9660338a67f8466b79",
+  "aggregation": "Mean over 3 adaptation samples within split; equal-weight average over 3 category splits. SD across split means is descriptive, not an independent-dataset confidence interval.",
+  "completed_post_configurations": 54,
+  "completed_pre_baselines": 6,
+  "calibration_budget": "k-shot fitting plus additional labelled new-intent dev calibration",
+  "mixed_environment_note": "Verified pilot predictions reused; LR pilot sklearn 1.9.1 versus Stage 5 environment recorded separately. Do not claim exact single-environment replication.",
+  "no_test_tuning": true
+}

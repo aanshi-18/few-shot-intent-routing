@@ -1,0 +1,6 @@
+{
+  "validated_post_configurations": 54,
+  "independent_core_metric_recomputation": "passed",
+  "convergence_warnings_in_new_post_runs": [],
+  "source": "saved predictions independently evaluated with sklearn and boolean counts"
+}
